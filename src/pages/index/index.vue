@@ -52,13 +52,13 @@ export default {
   methods: {
     bindViewTap () {
       const url = '../logs/main'
-      swan.navigateTo({ url })
+      mpvue.navigateTo({ url })
     },
     getUserInfo () {
       // 调用登录接口
-      // swan.login({
+      // mpvue.login({
       //   success: () => {
-      //     swan.getUserInfo({
+      //     mpvue.getUserInfo({
       //       success: (res) => {
       //         this.userInfo = res.userInfo
       //       }
