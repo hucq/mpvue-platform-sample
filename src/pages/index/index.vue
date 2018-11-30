@@ -52,13 +52,13 @@ export default {
   methods: {
     bindViewTap () {
       const url = '../logs/main'
-      wx.navigateTo({ url })
+      swan.navigateTo({ url })
     },
     getUserInfo () {
       // 调用登录接口
-      // wx.login({
+      // swan.login({
       //   success: () => {
-      //     wx.getUserInfo({
+      //     swan.getUserInfo({
       //       success: (res) => {
       //         this.userInfo = res.userInfo
       //       }

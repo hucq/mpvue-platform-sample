@@ -2,9 +2,9 @@
 export default {
   created () {
     // 调用API从本地缓存中获取数据
-    const logs = wx.getStorageSync('logs') || []
+    const logs = swan.getStorageSync('logs') || []
     logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+    swan.setStorageSync('logs', logs)
     // this.log()
     // console.log('app created and cache logs by setStorageSync')
   },
