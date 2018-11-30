@@ -37,7 +37,7 @@ export default {
   },
 
   created () {
-    const logs = (swan.getStorageSync('logs') || [])
+    const logs = (wx.getStorageSync('logs') || [])
     this.logs = logs.map(log => formatTime(new Date(log)))
     setTimeout(() => {
       // this.imgUrls = null

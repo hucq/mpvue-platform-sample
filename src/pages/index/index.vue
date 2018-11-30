@@ -2,14 +2,11 @@
   <div @click="clickHandle('test click', $event)">
 
     <div class="userinfo" @click="bindViewTap">
-      <!-- <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" /> -->
-      <!-- <image class="index-logo" src="https://avatars1.githubusercontent.com/u/1715463?s=40&v=4"></image> -->
-
-<!--       <img class="userinfo-avatar" src="../../images/user.jpeg" background-size="cover" />
-      <image class="index-logo" src="../../images/user.jpeg"></image> -->
+      <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
+      <img class="userinfo-avatar" src="/static/images/user.jpeg" background-size="cover" />
 
       <div class="userinfo-nickname">
-        <!-- <card text="userInfo.nickName"></card> -->
+        <card :text="userInfo.nickName"></card>
       </div>
     </div>
 
@@ -55,11 +52,11 @@ export default {
   methods: {
     bindViewTap () {
       const url = '../logs/main'
-      swan.navigateTo({ url })
+      wx.navigateTo({ url })
     },
     getUserInfo () {
       // 调用登录接口
-      // swan.login({
+      // wx.login({
       //   success: () => {
       //     wx.getUserInfo({
       //       success: (res) => {
