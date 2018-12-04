@@ -35,6 +35,7 @@ module.exports = {
   target: require('mpvue-webpack-target'),
   output: {
     path: config.build.assetsRoot,
+    jsonpFunction: 'webpackJsonpMpvue',
     filename: '[name].js',
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
