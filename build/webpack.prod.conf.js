@@ -12,7 +12,6 @@ var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 var MpvueVendorPlugin = require('webpack-mpvue-vendor-plugin')
 
 var env = config.build.env
-
 var webpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({
@@ -32,9 +31,6 @@ var webpackConfig = merge(baseWebpackConfig, {
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new webpack.DefinePlugin({
       'process.env': env
-    }),
-    new UglifyJsPlugin({
-      sourceMap: true
     }),
     // extract css into its own file
     new ExtractTextPlugin({
@@ -110,6 +106,13 @@ var webpackConfig = merge(baseWebpackConfig, {
 if (config.build.bundleAnalyzerReport) {
   var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
   webpackConfig.plugins.push(new BundleAnalyzerPlugin())
+}
+
+var useUglifyJs = process.env.PLATFORM !== 'swan'
+if (useUglifyJs) {
+  webpackConfig.plugins.push(new UglifyJsPlugin({
+    sourceMap: true
+  }))
 }
 
 module.exports = webpackConfig
