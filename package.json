@@ -6,18 +6,18 @@
   "author": "hucq <chengquan.hu@gmail.com>",
   "private": true,
   "scripts": {
-    "dev:wx": "node build/dev-server.js wx",
+    "dev:wx": "node --inspect-brk build/dev-server.js wx",
     "start:wx": "npm run dev:wx",
-    "build:wx": "node build/build.js wx",
+    "build:wx": "node --inspect build/build.js wx",
     "dev:swan": "node build/dev-server.js swan",
     "start:swan": "npm run dev:swan",
-    "build:swan": "node --inspect build/build.js swan",
+    "build:swan": "node build/build.js swan",
     "dev": "node build/dev-server.js wx",
     "start": "npm run dev",
     "build": "node build/build.js wx"
   },
   "dependencies": {
-    "mpvue": "^1.0.14-1"
+    "mpvue": "^1.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
@@ -39,7 +39,7 @@
     "glob": "^7.1.2",
     "html-webpack-plugin": "^3.2.0",
     "http-proxy-middleware": "^0.18.0",
-    "mpvue-loader": "^1.1.5-3",
+    "mpvue-loader": "^1.2.0",
     "mpvue-template-compiler": "^1.0.14-1",
     "mpvue-webpack-target": "^1.0.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
