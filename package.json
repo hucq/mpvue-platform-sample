@@ -6,22 +6,26 @@
   "author": "hucq <chengquan.hu@gmail.com>",
   "private": true,
   "scripts": {
-    "dev:wx": "node --inspect-brk build/dev-server.js wx",
+    "dev:wx": "node build/dev-server.js wx",
     "start:wx": "npm run dev:wx",
-    "build:wx": "node --inspect build/build.js wx",
+    "build:wx": "node build/build.js wx",
     "dev:swan": "node build/dev-server.js swan",
     "start:swan": "npm run dev:swan",
     "build:swan": "node build/build.js swan",
     "dev:tt": "node build/dev-server.js tt",
     "start:tt": "npm run dev:tt",
     "build:tt": "node build/build.js tt",
-    "dev": "node build/dev-server.js wx",
+    "dev": "node --inspect-brk build/dev-server.js wx",
     "start": "npm run dev",
-    "build": "node build/build.js wx"
+    "build": "node build/build.js wx",
+    "dev:all": "npm run dev:wx && npm run dev:swan && npm run dev:tt",
+    "start:all": "npm run dev:all",
+    "build:all": "npm run build:wx && npm run build:swan && npm run build:tt"
   },
   "dependencies": {
     "mpvue": "1.1.0",
-    "mpvue-loader": "1.2.0"
+    "mpvue-loader": "1.2.0",
+    "webpack-mpvue-asset-plugin": "^0.1.3"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
@@ -63,7 +67,6 @@
     "webpack-bundle-analyzer": "^2.2.1",
     "webpack-dev-middleware-hard-disk": "^1.12.0",
     "webpack-merge": "^4.1.0",
-    "webpack-mpvue-asset-plugin": "^0.1.2",
     "webpack-mpvue-vendor-plugin": "^0.0.1"
   },
   "engines": {
