@@ -37,12 +37,13 @@ export default {
   },
 
   created () {
-    const logs = (mpvue.getStorageSync('logs') || [])
+    let logs
+    if (mpvuePlatform === 'my') {
+      logs = mpvue.getStorageSync({key: 'logs'}).data || []
+    } else {
+      logs = mpvue.getStorageSync('logs') || []
+    }
     this.logs = logs.map(log => formatTime(new Date(log)))
-    setTimeout(() => {
-      // this.imgUrls = null
-      // this.imgUrls.push('https://km.meituan.net/111510301.png?contentId=111409666&attachmentId=111510302&originUrl=https://km.meituan.net/111510301.png&contentType=2&isDownload=false&token=0a11f47baf*14a1e8b34e4d01ff24da1&isNewContent=false&isViewPage=true')
-    }, 3E3)
   }
 }
 </script>
