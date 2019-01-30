@@ -1,8 +1,8 @@
 {
   "name": "mpvue-sample",
   "version": "1.0.0",
-  "mpvueTemplateProjectVersion": "0.0.4",
-  "description": "A Mpvue project",
+  "mpvueTemplateProjectVersion": "0.1.0",
+  "description": "A Mpvue project adapte to platform of weixin, alipay, toutiao and baidu",
   "author": "hucq <chengquan.hu@gmail.com>",
   "private": true,
   "scripts": {
@@ -26,9 +26,9 @@
     "build:all": "npm run build:wx && npm run build:swan && npm run build:tt"
   },
   "dependencies": {
-    "mpvue": "^1.0.20",
-    "mpvue-loader": "1.2.0",
-    "webpack-mpvue-asset-plugin": "^0.1.3"
+    "mpvue": "^1.1.2",
+    "mpvue-loader": "^1.2.1",
+    "webpack-mpvue-asset-plugin": "^0.1.5"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
@@ -50,7 +50,7 @@
     "glob": "^7.1.2",
     "html-webpack-plugin": "^3.2.0",
     "http-proxy-middleware": "^0.18.0",
-    "mpvue-template-compiler": "^1.0.20",
+    "mpvue-template-compiler": "^1.1.2",
     "mpvue-webpack-target": "^1.0.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^2.0.0",
@@ -70,7 +70,7 @@
     "webpack-bundle-analyzer": "^2.2.1",
     "webpack-dev-middleware-hard-disk": "^1.12.0",
     "webpack-merge": "^4.1.0",
-    "webpack-mpvue-vendor-plugin": "^0.0.1"
+    "webpack-mpvue-vendor-plugin": "^0.1.0"
   },
   "engines": {
     "node": ">= 4.0.0",

@@ -1093,10 +1093,10 @@ buffer@^4.3.0:
     ieee754 "^1.1.4"
     isarray "^1.0.0"
 
-builtin-modules@^1.0.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
-  integrity sha1-Jw8HbFpywC9bZaR9+Uxf46J4iS8=
+builtin-modules@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-3.0.0.tgz#1e587d44b006620d90286cc7a9238bbc6129cab1"
+  integrity sha512-hMIeU4K2ilbXV6Uv93ZZ0Avg/M91RaKXucQ+4me2Do1txxBDyDZWCBa5bJSLqoNTRpXTLwEzIk1KmloenDDjhg==
 
 builtin-status-codes@^3.0.0:
   version "3.0.0"
@@ -1966,9 +1966,9 @@ ejs@^2.5.7:
   integrity sha512-0xy4A/twfrRCnkhfk8ErDi5DqdAsAqeGxht4xkCUrsvhhbQNs7E+4jV0CN7+NKIY0aHE72+XvqtBIXzD31ZbXQ==
 
 electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.47:
-  version "1.3.108"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.108.tgz#2e79a6fcaa4b3e7c75abf871505bda8e268c910e"
-  integrity sha512-/QI4hMpAh48a1Sea6PALGv+kuVne9A2EWGd8HrWHMdYhIzGtbhVVHh6heL5fAzGaDnZuPyrlWJRl8WPm4RyiQQ==
+  version "1.3.109"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.109.tgz#ee04a55a5157a5580a5ea88e526b02c84a3a7bc8"
+  integrity sha512-1qhgVZD9KIULMyeBkbjU/dWmm30zpPUfdWZfVO3nPhbtqMHJqHr4Ua5wBcWtAymVFrUCuAJxjMF1OhG+bR21Ow==
 
 elliptic@^6.0.0:
   version "6.4.1"
@@ -2924,12 +2924,12 @@ is-buffer@^1.1.5:
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
 
-is-builtin-module@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/is-builtin-module/-/is-builtin-module-1.0.0.tgz#540572d34f7ac3119f8f76c30cbc1b1e037affbe"
-  integrity sha1-VAVy0096wxGfj3bDDLwbHgN6/74=
+is-builtin-module@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/is-builtin-module/-/is-builtin-module-3.0.0.tgz#137d3d2425023a19a660fb9dd6ddfabe52c03466"
+  integrity sha512-/93sDihsAD652hrMEbJGbMAVBf1qc96kyThHQ0CAOONHaE3aROLpTjDe4WQ5aoC5ITHFxEq1z8XqSU7km+8amw==
   dependencies:
-    builtin-modules "^1.0.0"
+    builtin-modules "^3.0.0"
 
 is-callable@^1.1.4:
   version "1.1.4"
@@ -3546,10 +3546,10 @@ move-concurrently@^1.0.1:
     rimraf "^2.5.4"
     run-queue "^1.0.3"
 
-mpvue-loader@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/mpvue-loader/-/mpvue-loader-1.2.0.tgz#2ddd71d4c3458bc10b8b5198653d2b210007d502"
-  integrity sha512-enVBb44355VU4VCm7p5qk8+/1ZxZ9XVJHA+M60jxTb1+bVysJ9ehoSRtPbi8ZISxPT2SF+EOnnZ5GF9wHoBwGA==
+mpvue-loader@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/mpvue-loader/-/mpvue-loader-1.2.1.tgz#3667ebecefff994f4299512a1fce1ecb314f7a1b"
+  integrity sha512-WSgEU2aSk7wdsz0xJgDXivzzUOBNh3noXnvE1tAl9rbU6S2qVIFLPJwgtZKtV0LvH3Jso0tnGI/Pr4ltN5srDA==
   dependencies:
     babelon "^1.0.5"
     consolidate "^0.14.0"
@@ -3571,10 +3571,10 @@ mpvue-loader@1.2.0:
     vue-style-loader "^3.0.0"
     vue-template-es2015-compiler "^1.5.3"
 
-mpvue-template-compiler@^1.0.20:
-  version "1.0.20"
-  resolved "https://registry.yarnpkg.com/mpvue-template-compiler/-/mpvue-template-compiler-1.0.20.tgz#8e400e6f6da2b6dc10c866232a882b09e18e92ee"
-  integrity sha512-cMJl+eH/I+iUDlmY634YvbB7CgYMRZhD/nLZsrcnK/QD8jvt7Hml/ldg5i6vjHasSiD7W/hnKElvCVrK3pg30w==
+mpvue-template-compiler@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/mpvue-template-compiler/-/mpvue-template-compiler-1.1.2.tgz#5386570ec634bbce4f314b802fe30c13ded1eba1"
+  integrity sha512-GXu0hg85xUExrcMX75OHHoFMVIe9XyO+mVZUQKBeolAuyXgmdJBKPOU+HmVfRbfGVklNQcf9mInUkATPIDw8Ag==
   dependencies:
     de-indent "^1.0.2"
     he "^1.1.0"
@@ -3584,10 +3584,10 @@ mpvue-webpack-target@^1.0.2:
   resolved "https://registry.yarnpkg.com/mpvue-webpack-target/-/mpvue-webpack-target-1.0.3.tgz#07ac9f89fdf0aabfb6bd079c7f068c94666006a9"
   integrity sha512-TeGn+caEkfqD2/dSEXoMz9TIGGaYVh/jl5XmZ6sMz+UPb3ZMYGFR2oCEITf1aXuYpp7MEGQ9FvT5bpxGxa72FQ==
 
-mpvue@^1.0.20:
-  version "1.0.20"
-  resolved "https://registry.yarnpkg.com/mpvue/-/mpvue-1.0.20.tgz#84fba8a397c28bf3ef2c801f27c34969b71cc122"
-  integrity sha512-FH9eWnfhCcJqe4vxHR4mTROSHJGqJDFwl0BSc+nNMLiHgcIYRersx8XuE0WLGq1yewQVkaEIbWoz4PoiolRpuw==
+mpvue@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/mpvue/-/mpvue-1.1.2.tgz#b1f1488ec00c081f0e90eef23c48e027307351ad"
+  integrity sha512-+iZ9OD37sKEftGfFCQjrOARX1e6joRqLOsIPyv4XEN1lKn1YehUw0tMTF0+rwrtJQOHSuW1st9htAssLYmnrsw==
 
 ms@2.0.0:
   version "2.0.0"
@@ -3706,12 +3706,12 @@ nopt@^4.0.1, nopt@~4.0.1:
     osenv "^0.1.4"
 
 normalize-package-data@^2.3.2:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/normalize-package-data/-/normalize-package-data-2.4.0.tgz#12f95a307d58352075a04907b84ac8be98ac012f"
-  integrity sha512-9jjUFbTPfEy3R/ad/2oNbKtW9Hgovl5O1FvFWKkKblNXoN/Oou6+9+KKohPK13Yc3/TyunyWhJp6gvRNR/PPAw==
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/normalize-package-data/-/normalize-package-data-2.4.1.tgz#ca948bac9af17c3c91e49fadd011fd7cb2be5c09"
+  integrity sha512-ZVuHxWJv1bopjv/SD5uPhgwUhLqxdJ+SsdUQbGR9HWlXrvnd/C08Cn9Bq48PbvX3y5V97GIpAHpL5Bk9BwChGg==
   dependencies:
     hosted-git-info "^2.1.4"
-    is-builtin-module "^1.0.0"
+    is-builtin-module "^3.0.0"
     semver "2 || 3 || 4 || 5"
     validate-npm-package-license "^3.0.1"
 
@@ -4413,9 +4413,9 @@ prepend-http@^1.0.0:
   integrity sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
 
 prettier@^1.7.0:
-  version "1.16.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.16.1.tgz#534c2c9d7853f8845e5e078384e71973bd74089f"
-  integrity sha512-XXUITwIkGb3CPJ2hforHah/zTINRyie5006Jd2HKy2qz7snEJXl0KLfsJZW/wst9g6R2rFvqba3VpNYdu1hDcA==
+  version "1.16.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.16.2.tgz#f60bc5929a7f9a05260cc88d5430391100092414"
+  integrity sha512-vBMdCn1LjrFi2CpBsiWVKOq+WP9poXDTIGPe2sG3eE33LQ3b6IUgmaMjLZKKY+frD/8FqPeEK1qAx9mOV8iruA==
 
 prettier@~1.12.1:
   version "1.12.1"
@@ -5736,18 +5736,18 @@ webpack-merge@^4.1.0:
   dependencies:
     lodash "^4.17.5"
 
-webpack-mpvue-asset-plugin@^0.1.3:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/webpack-mpvue-asset-plugin/-/webpack-mpvue-asset-plugin-0.1.4.tgz#915d3ce414ec25e017d70584b5dd0c32ffa96b86"
-  integrity sha512-v2CJepj2iicK91YPR7IZ8qq8J7rb2t/d2XMn8ai10IVVA/MtWoKebgc0W7QL/ZyXah+kXgESezah0MmIwu5ghw==
+webpack-mpvue-asset-plugin@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/webpack-mpvue-asset-plugin/-/webpack-mpvue-asset-plugin-0.1.5.tgz#9c8a22baa8db5cd47b6dbd9d11dea8e1222e677f"
+  integrity sha512-sEo0ieJjhXHqVDqBgxE/jSzxFKLIVgwBPCWugj/p3JaPuuH7uEj7SM7Xx94UQ+8A24s8aCSb6aPvFsJWZd47Ew==
   dependencies:
     relative "^3.0.2"
     upath "^1.1.0"
 
-webpack-mpvue-vendor-plugin@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/webpack-mpvue-vendor-plugin/-/webpack-mpvue-vendor-plugin-0.0.1.tgz#1c261daedc9aafefa9d4293ea13d5a4868629e14"
-  integrity sha512-ogStOpn4dd46qmEv3w9WW6/n7EROsaSEgLUPk99PDjJ/LCUjUU1fHs5DDUKx8Ck3jh+lZgb3D76vSOtXuDwKdw==
+webpack-mpvue-vendor-plugin@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/webpack-mpvue-vendor-plugin/-/webpack-mpvue-vendor-plugin-0.1.0.tgz#20258ce6f11406ab8ff0f2bf8dd9dd2067d85ac7"
+  integrity sha512-lQamuB+IptNsRQoPUMIGKCxVjuyQUxkx6nijYTdXC9HU9VPmRtRiKPp6PT94vMewLhtlUAG5MGy1T5o8O17KcA==
 
 webpack-sources@^1.0.1, webpack-sources@^1.1.0:
   version "1.3.0"
