@@ -81,7 +81,9 @@ var webpackConfig = merge(baseWebpackConfig, {
       name: 'common/manifest',
       chunks: ['common/vendor']
     }),
-    new MpvueVendorPlugin()
+    new MpvueVendorPlugin({
+      platform: process.env.PLATFORM
+    })
   ]
 })
 

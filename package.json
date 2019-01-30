@@ -15,6 +15,9 @@
     "dev:tt": "node build/dev-server.js tt",
     "start:tt": "npm run dev:tt",
     "build:tt": "node build/build.js tt",
+    "dev:my": "node build/dev-server.js my",
+    "start:my": "npm run dev:my",
+    "build:my": "node build/build.js my",
     "dev": "node --inspect-brk build/dev-server.js wx",
     "start": "npm run dev",
     "build": "node build/build.js wx",
@@ -23,7 +26,7 @@
     "build:all": "npm run build:wx && npm run build:swan && npm run build:tt"
   },
   "dependencies": {
-    "mpvue": "1.1.0",
+    "mpvue": "^1.0.20",
     "mpvue-loader": "1.2.0",
     "webpack-mpvue-asset-plugin": "^0.1.3"
   },
@@ -47,7 +50,7 @@
     "glob": "^7.1.2",
     "html-webpack-plugin": "^3.2.0",
     "http-proxy-middleware": "^0.18.0",
-    "mpvue-template-compiler": "1.1.0",
+    "mpvue-template-compiler": "^1.0.20",
     "mpvue-webpack-target": "^1.0.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^2.0.0",

@@ -3,7 +3,7 @@
 
     <div class="userinfo" @click="bindViewTap">
       <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
-      <img class="userinfo-avatar" src="/static/images/user.jpeg" background-size="cover" />
+      <img class="userinfo-avatar" src="/static/images/user.png" background-size="cover" />
 
       <div class="userinfo-nickname">
         <card :text="userInfo.nickName"></card>
@@ -38,10 +38,10 @@ import card from '@/components/card'
 export default {
   data () {
     return {
-      motto: 'Hello World',
+      motto: 'Hello miniprograme',
       userInfo: {
-        nickName: 'huchengquan',
-        avatarUrl: 'https://avatars1.githubusercontent.com/u/1715463?s=40&v=4'
+        nickName: 'mpvue',
+        avatarUrl: 'http://mpvue.com/assets/logo.png'
       }
     }
   },
@@ -55,18 +55,6 @@ export default {
       const url = '../logs/main'
       mpvue.navigateTo({ url })
     },
-    getUserInfo () {
-      // 调用登录接口
-      // mpvue.login({
-      //   success: () => {
-      //     mpvue.getUserInfo({
-      //       success: (res) => {
-      //         this.userInfo = res.userInfo
-      //       }
-      //     })
-      //   }
-      // })
-    },
     clickHandle (msg, ev) {
       console.log('clickHandle:', msg, ev)
       // throw {message: 'custom test'}
@@ -74,8 +62,6 @@ export default {
   },
 
   created () {
-    // 调用应用实例的方法获取全局数据
-    // this.getUserInfo()
     let app = getApp()
   }
 }
